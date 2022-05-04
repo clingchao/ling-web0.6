@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="CSS/Loading.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <div class="back" id="back">
+        <div class="log" id="log">
+            <div class="logtitle">登录</div>
+            <form action="community.html" id="logbody" class="logbody" onsubmit="return login()">
+                <input type="text" id="zh" size="25" class="txt" placeholder="账户">
+                <br>
+                <input type="password" id="mm" size="25" class="txt" placeholder="密码">
+                <br>
+                <input type="submit" value="登录" id="sub" class="sub">
+                <a href="registered.html"><input type="button" value="注册"  class="sub"></a>
+                <a href="ForgotPassword.html"><input type="button" value="忘记密码"  class="end"></a>
+            </form>     
+        </div>
+    </div>
+    <div class="con" id="con">
+        <div class="load">
+            <div class="dot" style="--i:0"></div>
+            <div class="dot" style="--i:1"></div>
+            <div class="dot" style="--i:2"></div>
+            <div class="dot" style="--i:3"></div>
+            <div class="dot" style="--i:4"></div>
+            <div class="dot" style="--i:5"></div>
+            <div class="dot" style="--i:6"></div>
+        </div>
+    </div>
+    <script src="JS/login.js"></script>
+</body>
+</html>

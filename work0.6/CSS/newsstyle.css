@@ -1,0 +1,213 @@
+
+@charset "utf-8";
+
+.mid {
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.headimg {
+    top: 0px;
+    height: 590px;
+    width: 100%;
+    background-image: url("/img/11.jpg");
+    background-size: 1540px;
+    background-repeat: no-repeat;
+    background-position-y: -190px;
+    background-position-x: -150px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(58, 83, 85);
+    animation: headload 4s linear;
+}
+
+@keyframes headload {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 590px;
+    }
+}
+
+.sec {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.sec1 {
+    height: 90vh;
+    width: 90vw;
+    margin: 10px 10px 10px 200px;
+    scroll-snap-align: start;
+    animation: load 10s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 150px;
+    float: left;
+    margin: 10px 10px -10px 0px;
+    background: rgba(219, 235, 241, 0.8);
+    box-shadow: 0 0 15px rgb(59, 73, 95);
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+
+.menu .txt {
+    text-align: center;
+}
+.menu .txt h4{
+    color:rgb(27, 18, 18);
+    
+}
+.menu:hover {   
+    background-color: rgb(115, 136, 137);
+}
+.content {
+    float: left;
+    width: 1150px;
+    height: 200px;
+    box-shadow: 0 0 15px rgb(83, 103, 110);
+    background: rgba(71, 142, 175, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    overflow: hidden;
+    margin: 100px 20px -80px 0px;
+
+}
+.ct1 .img{
+    background-image: url("/img/12.jpg");
+}
+.ct1 .img{
+    animation: ct1load 5s linear;
+    transition: 0.5s  2s;
+}
+.ct1 .txt {
+    color: #000;
+    margin: 20px;
+}
+.content .img{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.3);
+    opacity: 0.8;
+    transition: all 0.5s ease 0s;
+}
+.content .img:hover{
+    transform: scale(1.1);
+}
+.content .imghid{
+    overflow: hidden;
+}
+
+@keyframes ct1load{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 20px;
+    }
+    100%{
+        opacity: 1;
+       /* margin-top: 40px;*/
+    }
+}
+
+.pt {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+    float: left;
+    margin: 160px -150px 0px 200px;
+    background: rgba(50, 54, 58, 0.262);
+    box-shadow: 0 0 15px rgba(30, 34, 41, 0.025);
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+
+.pt:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imghid {
+    overflow: hidden;
+}
+
+.part1 .img {
+    background-image: url("/img/Age-appropriatetips.webp");
+}
+
+.part2 .img {
+    background-image: url("../image/homepic2.png");
+}
+
+.part3 .img {
+    background-image: url("../image/homepic3.png");
+}
+
+.part4 .img {
+    background-image: url("../image/homepic4.png");
+}
+
+.pt .img {
+    height: 190px;
+    width: 250px;
+    background-size: cover;
+    background-position: 0px -30px;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+
+.pt .img:hover {
+    transform: scale(1.1);
+}
+
+.pt .txt {
+    height: 310px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.pt .txt h2 {
+    text-align: center;
+    color: rgb(28, 44, 68);
+    height: 15px;
+    line-height: 30px;
+}
+
+.pt .txt p {
+    margin-top: -2px;
+    word-wrap: break-word;
+    color: rgb(114, 182, 202);
+}
+
+@keyframes load {
+    0% {
+        background-position-y: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        background-position-y: 0px;
+        opacity: 1;
+    }
+}

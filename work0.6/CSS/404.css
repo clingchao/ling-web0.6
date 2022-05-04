@@ -1,0 +1,12 @@
+@charset "utf-8";
+.cen{
+    background: no-repeat;
+    margin-left: 150px;
+    width: 800px;
+    height: 800px;
+}
+.cen .img{
+    width: 800px;
+    height: 800px;
+    background-image: url("/img/123.jpg");
+}

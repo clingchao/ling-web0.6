@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+.titleimg{
+    background-image: url("");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1540px;
+    background-attachment: fixed;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+    animation: load 0.5s;
+}
+
+.titleimg .title{
+    width: 1540px;
+    padding:200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(49, 70, 87,0.9);
+}
+
+.main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.box1{
+    height: 180vh;
+    width: 100vw;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+}
+.sec{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+.box1 .format{
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 0 15px rgb(83, 103, 110);
+    background: rgba(71, 142, 175, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.a1 .img{
+    background-image: url("../image/about1.jpg");
+}
+.a2 .img{
+    background-image: url("../image/about2.jpg");
+}
+.a3 .img{
+    background-image: url("../image/about3.jpg");
+}
+.a4 .img{
+    background-image: url("../image/about1.jpg");
+}
+.a5 .img{
+    background-image: url("../image/about2.jpg");
+}
+.a6 .img{
+    background-image: url("../image/about3.jpg");
+}
+.format p{
+    word-wrap: break-word;
+    color: rgb(63, 109, 109);
+    line-height: 24px;
+}
+.format .txt{
+    width: 400px;
+    margin: 0 50px 0 50px;
+}
+.format h2{
+    text-align: center;
+    color: rgb(51, 86, 114);
+}
+
+.format .img{
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.3);
+    opacity: 0.8;
+    transition: all 0.5s ease 0s;
+}
+.format .img:hover{
+    transform: scale(1.1);
+}
+.format .imghid{
+    overflow: hidden;
+}
+.a1{
+    margin-left: 40%;
+    animation: a1load 2.5s linear;
+    transition: 0.5s  1s;
+}
+.a2{
+    margin-left: 10%;
+    animation: a2load 3.6s linear;
+    transition: 0.5s;
+}
+.a3{
+    margin-left: 40%;
+    animation: a3load 4.8s linear;
+    transition: 0.5s;
+}
+.a4{
+    margin-left: 10%;
+    animation: a1load 6.0s linear;
+    transition: 0.5s ;
+}
+.a5{
+    margin-left: 40%;
+    animation: a2load 7.2s linear;
+    transition: 0.5s;
+}
+.a6{
+    margin-left: 10%;
+    animation: a3load 8.4s linear;
+    transition: 0.5s;
+}
+
+
+@keyframes a1load{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes a2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a4load{
+    0%{
+        
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a5load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a6load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes headload{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 240px;
+    }
+}
